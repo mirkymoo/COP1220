@@ -1,1 +1,1 @@
-scanf("%d", &fahrenheit);
+rintf("Waht is the length
