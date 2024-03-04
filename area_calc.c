@@ -6,12 +6,12 @@ float calc_area_of_wall(float length, float width, float height) {
     return area_of_wall;
 }
 
-float calculate_gallons(float area_of_wall) {
+float calc_gallons(float area_of_wall) {
     const float coverage_per_gallon = 350; 
     return area_of_wall / coverage_per_gallon;
 }
 
-float calculate_price(float gallons_required) {
+float calc_price(float gallons_required) {
     const float price_per_gallon = 32;
     return gallons_required * price_per_gallon;
 }
@@ -29,8 +29,8 @@ int main() {
     
     //calculations
     float area_of_wall = calc_area_of_wall(length, width, height);
-    float gallons_required = calculate_gallons(area_of_wall);
-    float price = calculate_price(gallons_required);
+    float gallons_required = calc_gallons(area_of_wall);
+    float price = calc_price(gallons_required);
     
     //display results
     printf("You will need %.2f gallons of paint, which should cost you $%.2f\n\n", gallons_required, price);
