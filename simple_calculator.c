@@ -1,11 +1,9 @@
 #include <stdio.h>
 
-
 void add(double a, double b);
 void subtract(double a, double b);
 void multiply(double a, double b);
 void divide(double a, double b);
-
 
 void add(double a, double b) {
     double answer = a + b;
